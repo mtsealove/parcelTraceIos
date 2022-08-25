@@ -7,82 +7,73 @@
 
 import SwiftUI
 import CoreData
+import SwiftSoup
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    @State var search = "649431275512"
+    @State var list: [TrackingModel] = []
+    
+    private func getItemsByHtml() {
+        print(search)
+        let urlStr = "http://nplus.doortodoor.co.kr/web/detail.jsp?slipno=\(search)"
+        print("url", urlStr)
+        guard let url = URL(string: urlStr) else {return}
+        do {
+            let encoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(0x0422))
+            let html = try String(contentsOf: url, encoding: encoding)
+            let doc: Document = try SwiftSoup.parse(html)
+//            print(doc)
+            let table = try doc.body()!.select("center").select("table")[6].select("tbody").first()!
+            let trs = try table.select("tr")
+            
+            for i in 0..<trs.count {
+                let tr = trs[i]
+                if i != 0 {
+                    let tds = try tr.select("td")
+                    if tds.count == 6 {
+                        let date = try tds[0].text()
+                        let time = try tds[1].text()
+                        let state = try tds[5].text()
+                        
+                        let location = try tds[3].text()
+                        let data = TrackingModel(datetime: "\(date) \(time)", location: location, state: state)
+                        list.append(data)
+                    }
+                }
+            }
+//            print(list)
+            list.reverse()
+//            print(table)
+        } catch let error {
+            print("error", error)
+        }
+    }
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        VStack(alignment: .leading) {
+            HStack{
+                TextField("송장번호 입력", text: $search)
+                Button(action: {
+                    getItemsByHtml()
+                }) {
+                    Text("검색")
+                        .foregroundColor(.white)
+                        .padding(.vertical,10)
+                        .padding(.horizontal, 20)
+                }.background(Color.blue)
+                    .cornerRadius(10)
+            }.padding()
+            ForEach(list) { tracking in
+                TrackingView(model: tracking)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+            Spacer()
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .previewDevice(PreviewDevice(rawValue: "iPhone 13"))
     }
 }

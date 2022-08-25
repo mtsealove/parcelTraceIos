@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E9DCF628C77CDDA2FEBEBF /* Pods_ParcelTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4539C7B4E789516D7FA7E3 /* Pods_ParcelTracker.framework */; };
 		91FD8A5A28B73F7F00AA0C0F /* ParcelTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A5928B73F7F00AA0C0F /* ParcelTrackerApp.swift */; };
 		91FD8A5C28B73F7F00AA0C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A5B28B73F7F00AA0C0F /* ContentView.swift */; };
 		91FD8A5E28B73F8200AA0C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FD8A5D28B73F8200AA0C0F /* Assets.xcassets */; };
@@ -16,6 +17,10 @@
 		91FD8A7028B73F8200AA0C0F /* ParcelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A6F28B73F8200AA0C0F /* ParcelTrackerTests.swift */; };
 		91FD8A7A28B73F8200AA0C0F /* ParcelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A7928B73F8200AA0C0F /* ParcelTrackerUITests.swift */; };
 		91FD8A7C28B73F8200AA0C0F /* ParcelTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A7B28B73F8200AA0C0F /* ParcelTrackerUITestsLaunchTests.swift */; };
+		91FD8A8928B740D100AA0C0F /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A8828B740D100AA0C0F /* TrackingView.swift */; };
+		91FD8A8B28B7410200AA0C0F /* TrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD8A8A28B7410200AA0C0F /* TrackingModel.swift */; };
+		CD28AAA95FEF2F9C1BC9C44A /* Pods_ParcelTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B4ADE5FCD7EC9E27DC1AFA /* Pods_ParcelTrackerTests.framework */; };
+		E61F3A31CC27875EB3E9BD2B /* Pods_ParcelTracker_ParcelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ECA13E2F1A79C114CBEF60 /* Pods_ParcelTracker_ParcelTrackerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE2175120AF28ED24F670DF /* Pods-ParcelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParcelTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ParcelTrackerTests/Pods-ParcelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19B4ADE5FCD7EC9E27DC1AFA /* Pods_ParcelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParcelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB8F88C85B4DA33CEA8CD61 /* Pods-ParcelTracker-ParcelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParcelTracker-ParcelTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParcelTracker-ParcelTrackerUITests/Pods-ParcelTracker-ParcelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25ECA13E2F1A79C114CBEF60 /* Pods_ParcelTracker_ParcelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParcelTracker_ParcelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFCBA1C6563E8CE4B4D4D71 /* Pods-ParcelTracker-ParcelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParcelTracker-ParcelTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-ParcelTracker-ParcelTrackerUITests/Pods-ParcelTracker-ParcelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F4539C7B4E789516D7FA7E3 /* Pods_ParcelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParcelTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D68498313D617F7DDC65BE1 /* Pods-ParcelTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParcelTracker.release.xcconfig"; path = "Target Support Files/Pods-ParcelTracker/Pods-ParcelTracker.release.xcconfig"; sourceTree = "<group>"; };
 		91FD8A5628B73F7F00AA0C0F /* ParcelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParcelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FD8A5928B73F7F00AA0C0F /* ParcelTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTrackerApp.swift; sourceTree = "<group>"; };
 		91FD8A5B28B73F7F00AA0C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +60,11 @@
 		91FD8A7528B73F8200AA0C0F /* ParcelTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParcelTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FD8A7928B73F8200AA0C0F /* ParcelTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTrackerUITests.swift; sourceTree = "<group>"; };
 		91FD8A7B28B73F8200AA0C0F /* ParcelTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91FD8A8828B740D100AA0C0F /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
+		91FD8A8A28B7410200AA0C0F /* TrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingModel.swift; sourceTree = "<group>"; };
+		91FD8A8C28B7455600AA0C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DEC27426F677EB2F293B3F9B /* Pods-ParcelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParcelTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-ParcelTrackerTests/Pods-ParcelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC055D69ECCA60C50277B39F /* Pods-ParcelTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParcelTracker.debug.xcconfig"; path = "Target Support Files/Pods-ParcelTracker/Pods-ParcelTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E9DCF628C77CDDA2FEBEBF /* Pods_ParcelTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD28AAA95FEF2F9C1BC9C44A /* Pods_ParcelTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61F3A31CC27875EB3E9BD2B /* Pods_ParcelTracker_ParcelTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73B38C8C2446EB2015790374 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC055D69ECCA60C50277B39F /* Pods-ParcelTracker.debug.xcconfig */,
+				7D68498313D617F7DDC65BE1 /* Pods-ParcelTracker.release.xcconfig */,
+				1CB8F88C85B4DA33CEA8CD61 /* Pods-ParcelTracker-ParcelTrackerUITests.debug.xcconfig */,
+				4CFCBA1C6563E8CE4B4D4D71 /* Pods-ParcelTracker-ParcelTrackerUITests.release.xcconfig */,
+				0AE2175120AF28ED24F670DF /* Pods-ParcelTrackerTests.debug.xcconfig */,
+				DEC27426F677EB2F293B3F9B /* Pods-ParcelTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		91FD8A4D28B73F7F00AA0C0F = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +115,8 @@
 				91FD8A6E28B73F8200AA0C0F /* ParcelTrackerTests */,
 				91FD8A7828B73F8200AA0C0F /* ParcelTrackerUITests */,
 				91FD8A5728B73F7F00AA0C0F /* Products */,
+				73B38C8C2446EB2015790374 /* Pods */,
+				AA5CBFD50D8E7042379A0583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,12 +133,15 @@
 		91FD8A5828B73F7F00AA0C0F /* ParcelTracker */ = {
 			isa = PBXGroup;
 			children = (
+				91FD8A8C28B7455600AA0C0F /* Info.plist */,
 				91FD8A5928B73F7F00AA0C0F /* ParcelTrackerApp.swift */,
 				91FD8A5B28B73F7F00AA0C0F /* ContentView.swift */,
 				91FD8A5D28B73F8200AA0C0F /* Assets.xcassets */,
 				91FD8A6228B73F8200AA0C0F /* Persistence.swift */,
 				91FD8A6428B73F8200AA0C0F /* ParcelTracker.xcdatamodeld */,
 				91FD8A5F28B73F8200AA0C0F /* Preview Content */,
+				91FD8A8828B740D100AA0C0F /* TrackingView.swift */,
+				91FD8A8A28B7410200AA0C0F /* TrackingModel.swift */,
 			);
 			path = ParcelTracker;
 			sourceTree = "<group>";
@@ -133,6 +171,16 @@
 			path = ParcelTrackerUITests;
 			sourceTree = "<group>";
 		};
+		AA5CBFD50D8E7042379A0583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F4539C7B4E789516D7FA7E3 /* Pods_ParcelTracker.framework */,
+				25ECA13E2F1A79C114CBEF60 /* Pods_ParcelTracker_ParcelTrackerUITests.framework */,
+				19B4ADE5FCD7EC9E27DC1AFA /* Pods_ParcelTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91FD8A7F28B73F8200AA0C0F /* Build configuration list for PBXNativeTarget "ParcelTracker" */;
 			buildPhases = (
+				8860A5968CB200C40FBD3FCF /* [CP] Check Pods Manifest.lock */,
 				91FD8A5228B73F7F00AA0C0F /* Sources */,
 				91FD8A5328B73F7F00AA0C0F /* Frameworks */,
 				91FD8A5428B73F7F00AA0C0F /* Resources */,
+				89D940A3600644CC9E910F1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91FD8A8228B73F8200AA0C0F /* Build configuration list for PBXNativeTarget "ParcelTrackerTests" */;
 			buildPhases = (
+				AB0D425F0A7FD52B3E2F3B29 /* [CP] Check Pods Manifest.lock */,
 				91FD8A6728B73F8200AA0C0F /* Sources */,
 				91FD8A6828B73F8200AA0C0F /* Frameworks */,
 				91FD8A6928B73F8200AA0C0F /* Resources */,
@@ -175,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91FD8A8528B73F8200AA0C0F /* Build configuration list for PBXNativeTarget "ParcelTrackerUITests" */;
 			buildPhases = (
+				4DCB3A5EA8F4D5BDC1710195 /* [CP] Check Pods Manifest.lock */,
 				91FD8A7128B73F8200AA0C0F /* Sources */,
 				91FD8A7228B73F8200AA0C0F /* Frameworks */,
 				91FD8A7328B73F8200AA0C0F /* Resources */,
+				74066A5DEB463F022E0B760C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +311,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DCB3A5EA8F4D5BDC1710195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParcelTracker-ParcelTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74066A5DEB463F022E0B760C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParcelTracker-ParcelTrackerUITests/Pods-ParcelTracker-ParcelTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParcelTracker-ParcelTrackerUITests/Pods-ParcelTracker-ParcelTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParcelTracker-ParcelTrackerUITests/Pods-ParcelTracker-ParcelTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8860A5968CB200C40FBD3FCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParcelTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89D940A3600644CC9E910F1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParcelTracker/Pods-ParcelTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParcelTracker/Pods-ParcelTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParcelTracker/Pods-ParcelTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0D425F0A7FD52B3E2F3B29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParcelTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91FD8A5228B73F7F00AA0C0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,7 +421,9 @@
 			files = (
 				91FD8A6328B73F8200AA0C0F /* Persistence.swift in Sources */,
 				91FD8A6628B73F8200AA0C0F /* ParcelTracker.xcdatamodeld in Sources */,
+				91FD8A8928B740D100AA0C0F /* TrackingView.swift in Sources */,
 				91FD8A5C28B73F7F00AA0C0F /* ContentView.swift in Sources */,
+				91FD8A8B28B7410200AA0C0F /* TrackingModel.swift in Sources */,
 				91FD8A5A28B73F7F00AA0C0F /* ParcelTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +577,7 @@
 		};
 		91FD8A8028B73F8200AA0C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC055D69ECCA60C50277B39F /* Pods-ParcelTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,11 +587,13 @@
 				DEVELOPMENT_TEAM = 394Q8TY4HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParcelTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,6 +609,7 @@
 		};
 		91FD8A8128B73F8200AA0C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D68498313D617F7DDC65BE1 /* Pods-ParcelTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,11 +619,13 @@
 				DEVELOPMENT_TEAM = 394Q8TY4HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParcelTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +641,7 @@
 		};
 		91FD8A8328B73F8200AA0C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE2175120AF28ED24F670DF /* Pods-ParcelTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +662,7 @@
 		};
 		91FD8A8428B73F8200AA0C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC27426F677EB2F293B3F9B /* Pods-ParcelTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +683,7 @@
 		};
 		91FD8A8628B73F8200AA0C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB8F88C85B4DA33CEA8CD61 /* Pods-ParcelTracker-ParcelTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +702,7 @@
 		};
 		91FD8A8728B73F8200AA0C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFCBA1C6563E8CE4B4D4D71 /* Pods-ParcelTracker-ParcelTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
